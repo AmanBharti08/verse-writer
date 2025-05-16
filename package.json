@@ -12,8 +12,11 @@
     "mongoose": "^8.14.0",
     "next": "15.3.1",
     "next-auth": "^4.24.11",
+    "phosphor-react": "^1.4.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "sass": "^1.89.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
