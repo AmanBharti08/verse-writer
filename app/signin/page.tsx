@@ -1,18 +1,21 @@
 'use client';
-
+// import React from 'react'
 import React from 'react'
 import Image from 'next/image'
+
+//styles
 import Styles from "./signin.module.scss"
+
 //icons
 import { FcGoogle } from "react-icons/fc";
-import { EnvelopeSimple,DeviceMobileCamera } from 'phosphor-react';
+import { EnvelopeSimple, DeviceMobileCamera } from 'phosphor-react';
+
 //fonts
 import { Montserrat } from 'next/font/google'
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 })
-
 
 //images import
 import cole from '../../public/images/cole.webp'
@@ -38,7 +41,7 @@ const page = () => {
         <section className='bg-[#212121] h-4/9 p-5 rounded-4xl flex flex-col gap-2'>
           <h2 className='text-[#B3B3B3] text-4xl font-bold'>Welcome back</h2>
           <p className='text-[#B3B3B3] font-light'>Continue the legacy
-            tap down your real emotions with this notepad.</p>
+            Tap down your real emotions with this notepad.</p>
           <div className='mt-2.5 flex flex-col gap-4'>
             <div className='bg-[#FFFFFF] rounded-4xl p-4 flex items-center justify-center gap-2'><FcGoogle size={30} />
               Sign in with Google</div>

@@ -1,14 +1,16 @@
 'use client';
 
-
+// import React from 'react'
 import React from 'react'
 import Image from 'next/image'
-import Styles from "./signup.module.scss"
 
+//styles
+import Styles from "./signup.module.scss"
 
 //icons
 import { FcGoogle } from "react-icons/fc";
 import { EnvelopeSimple, DeviceMobileCamera } from 'phosphor-react';
+
 //fonts
 import { Montserrat } from 'next/font/google'
 const montserrat = Montserrat({
@@ -40,7 +42,7 @@ const page = () => {
                 <section className='bg-[#212121] h-5/11 p-5 rounded-4xl flex flex-col gap-2'>
                     <h2 className='text-[#B3B3B3] text-4xl font-bold'>Get Started</h2>
                     <p className='text-[#B3B3B3] font-light'>Write like never before!
-                        tap down your real emotions with this notepad.</p>
+                        Tap down your real emotions with this notepad.</p>
                     <div className='mt-2.5 flex flex-col gap-4'>
                         <div className='bg-[#FFFFFF] rounded-4xl p-4 flex items-center justify-center gap-2'><FcGoogle size={30} />Sign up with Google</div>
                         <div className='bg-[#535353] rounded-4xl p-4 flex gap-2 items-center justify-center text-[#B3B3B3]'><EnvelopeSimple size={30} /><span>Sign up with email</span></div>
