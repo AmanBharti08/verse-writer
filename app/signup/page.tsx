@@ -3,6 +3,7 @@
 // import React from 'react'
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 
 //styles
 import Styles from "./signup.module.scss"
@@ -39,7 +40,7 @@ const page = () => {
                     </div>
 
                 </section>
-                <section className='bg-[#212121] h-5/11 p-5 rounded-4xl flex flex-col gap-2'>
+                <section className={`bg-[#212121] h-5/11 p-5 rounded-4xl flex flex-col gap-2  ${Styles.signupContainer}`}>
                     <h2 className='text-[#B3B3B3] text-4xl font-bold'>Get Started</h2>
                     <p className='text-[#B3B3B3] font-light'>Write like never before!
                         Tap down your real emotions with this notepad.</p>
@@ -49,7 +50,9 @@ const page = () => {
                         <div className='bg-[#535353] rounded-4xl p-4 flex gap-2 items-center justify-center text-[#B3B3B3]'><DeviceMobileCamera size={30} /><span>Sign up with phone number</span></div>
                     </div>
 
-                    <h6 className='text-center text-[#B3B3B3] font-bold'>Already have an account? <span className='text-[#ffffff]'>Sign in</span></h6>
+                    <h6 className='text-center text-[#B3B3B3] font-bold'>Already have an account?
+                        <Link href="/signin"><span className='text-[#ffffff]'> Sign in</span></Link>
+                    </h6>
                 </section>
             </div>
         </div >
