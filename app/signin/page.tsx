@@ -1,6 +1,6 @@
 "use client";
 // import React from 'react'
-import React from "react";
+import React, { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 //styles
@@ -23,8 +23,8 @@ import eminem from "../../public/images/eminem.webp";
 import harlow from "../../public/images/harlow.webp";
 import kendrick from "../../public/images/kendrick.webp";
 
-const page = () => {
-  const handleSignup = () => { };
+const Signin: FC = () => {
+
 
   return (
     <div className={`h-screen w-screen ${montserrat.className}`}>
@@ -74,7 +74,7 @@ const page = () => {
           <h6 className="text-center text-[#B3B3B3] font-bold">
             Don’t have an account?{" "}
             <Link href="/signup">
-              <span className="text-[#ffffff]" onClick={handleSignup}>
+              <span className="text-[#ffffff]" >
                 Sign up
               </span>
             </Link>
@@ -86,4 +86,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Signin;
