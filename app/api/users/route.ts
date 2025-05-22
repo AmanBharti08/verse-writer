@@ -45,12 +45,20 @@ export async function POST(request: Request) {
         return NextResponse.json(newUser, { status: 201 });
     } catch (error) {
         console.log(error)
+        console.error('Error in /api/users:', error);
         return NextResponse.json({ message: "Error in getting data" }, { status: 500 });
 
     }
 }
 
-// export async function POST() {
-//   return new Response("User API works!", { status: 200 });
-// }
+export async function GET() {
+  try {
+    await dbConnect();
+    const users = await User.find();
+    return NextResponse.json(users, { status: 200 });
+  } catch (error) {
+    console.error(error);
+    return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
+  }
+}
 
